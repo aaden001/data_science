@@ -1,0 +1,11 @@
+Filename,actualTopic,classifiedAs
+Q1/test/mytopic\1.txt,shopping,on-topic
+Q1/test/mytopic\2.txt,shopping,on-topic
+Q1/test/mytopic\3.txt,shopping,on-topic
+Q1/test/mytopic\4.txt,shopping,on-topic
+Q1/test/mytopic\5.txt,shopping,on-topic
+Q1/test/notmytopic\1.txt,non-shopping,off-topic
+Q1/test/notmytopic\2.txt,non-shopping,off-topic
+Q1/test/notmytopic\3.txt,non-shopping,off-topic
+Q1/test/notmytopic\4.txt,non-shopping,off-topic
+Q1/test/notmytopic\5.txt,non-shopping,off-topic

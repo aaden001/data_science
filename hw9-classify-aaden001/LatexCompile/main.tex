@@ -1,0 +1,299 @@
+\documentclass[12pt]{article}
+\usepackage{times} 			% use Times New Roman font
+
+\usepackage[margin=1in]{geometry}   % sets 1 inch margins on all sides
+\usepackage{hyperref}               % for URL formatting
+\usepackage[pdftex]{graphicx}       % So includegraphics will work
+\setlength{\parskip}{1em}           % skip 1em between paragraphs
+\usepackage{indentfirst}            % indent the first line of each paragraph
+\usepackage{datetime}
+\usepackage[small, bf]{caption}
+\usepackage{listings}               % for code listings
+\usepackage{xcolor}                 % for styling code
+\usepackage{multirow}
+
+\usepackage{longtable}
+\usepackage{float}
+%New colors defined below
+\definecolor{backcolour}{RGB}{246, 246, 246}   % 0xF6, 0xF6, 0xF6
+\definecolor{codegreen}{RGB}{16, 124, 2}       % 0x10, 0x7C, 0x02
+\definecolor{codepurple}{RGB}{170, 0, 217}     % 0xAA, 0x00, 0xD9
+\definecolor{codered}{RGB}{154, 0, 18}         % 0x9A, 0x00, 0x12
+
+%Code listing style named "gcolabstyle" - matches Google Colab
+\lstdefinestyle{gcolabstyle}{
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{backcolour},   
+  commentstyle=\itshape\color{codegreen},
+  keywordstyle=\color{codepurple},
+  stringstyle=\color{codered},
+  numberstyle=\ttfamily\footnotesize\color{darkgray}, 
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+\lstset{style=gcolabstyle}      %set gcolabstyle code listing
+
+% to make long URIs break nicely
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+
+% for fancy page headings
+\usepackage{fancyhdr}
+\setlength{\headheight}{13.6pt} % to remove fancyhdr warning
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small \thepage}
+\lhead{\small HW9, Adeniran}  % EDIT THIS, REPLACE # with HW number
+\chead{\small CS 532, Spring 2021} 
+
+%-------------------------------------------------------------------------
+\begin{document}
+
+\begin{centering}
+{\large\textbf{HW9 - Email Classification}}\\ % EDIT THIS
+                                % REPLACE # with HW num and ADD title
+Adeniran Adeniyi\\                     % EDIT THIS
+DUE Wednesday, April 28, 2021 by 11:59pm\\                      % EDIT THIS
+\end{centering}
+
+%-------------------------------------------------------------------------
+
+% The * after \section just says to not number the sections
+%----------------------------Q1111111111111111111111111111111111
+
+\section*{Q1}
+\emph{You may choose a topic to classify your emails on (but choose only 1 topic). This can be spam, shopping emails, school emails, etc.\\
+The Training dataset should consist of:}
+\begin{itemize}
+    \item 20 text documents for email messages you consider on your chosen topic
+    \item 20 text documents for email messages you consider not on your chosen topic
+    
+\end{itemize}
+\emph{The Testing data-set should consist of:}
+\begin{itemize}
+    \item 5 text documents for email messages you consider on your chosen topic
+    \item 5 text documents for email messages you consider not on your chosen topic
+\end{itemize}
+\emph{Make sure that these are plain-text documents and that they do not include HTML tags. The documents in the Testing set should be different than the documents in the Training set.\\
+Upload your datasets to your GitHub repo. Please do not include emails that contain sensitive information
+\\ \\What topic did you decide to classify on?}
+\subsection*{\color{blue}{Answer}}
+\emph{The topic of my classification I did was shopping emails types.}
+
+\subsection*{Discussion}
+\emph{I followed these instruction below:}
+    \begin{itemize}
+        \item For this I created a folder called Q1.
+        \item In Q1 I had two folders called train and test.
+        \item These folder contained my train data sets and test data set respectively.
+        \item Under the two sub folders train and test, I had two folders - mytopic, notmytopic- that contained text files associated with my topic or without my topic in the respective folders as described.
+        \item I used copied content of emails used to the text files manual. I used a second email when shopping emails where running out in my first email address
+    \end{itemize}
+\section*{Q2}
+\emph{Use the example code in the class Colab notebook to train and test the Naive Bayes classifier.
+\begin{itemize}
+    \item Use your Training dataset to train the Naive Bayes classifier.
+    \item Use your Testing dataset to test the Naive Bayes classifier.
+\end{itemize}
+Create a table to report the classification results for each email message in the Testing dataset. The table should include what the classifier reported (on-topic or off-topic) and the actual classification.\\ \\For those emails that the classifier got wrong, look at the text and discuss what factors might have caused the classifier to be incorrect.}
+\subsection*{\color{blue}{Answer}}
+
+
+\begin{center}
+\begin{longtable}{|l|l|l|}
+\caption{Result of after classification} \label{tab:long} \\
+
+\hline  
+\multicolumn{1}{|c|}{\textbf{Filename}} & 
+\multicolumn{1}{|c|}{\textbf{actualTopic}}  &
+\multicolumn{1}{|c|}{\textbf{classifiedAs}} 
+\\ \hline 
+\endfirsthead
+
+\multicolumn{2}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline 
+\multicolumn{1}{|c|}{\textbf{Filename}} & 
+\multicolumn{1}{|c|}{\textbf{actualTopic}}  &
+\multicolumn{1}{|c|}{\textbf{classifiedAs}} 
+\\ \hline 
+\endhead
+
+\hline \multicolumn{3}{|c|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+Q1/test/mytopic\textbackslash{}1.txt    & shopping     & on-topic     \\
+Q1/test/mytopic\textbackslash{}2.txt    & shopping     & on-topic     \\
+Q1/test/mytopic\textbackslash{}3.txt    & shopping     & on-topic     \\
+Q1/test/mytopic\textbackslash{}4.txt    & shopping     & on-topic     \\
+Q1/test/mytopic\textbackslash{}5.txt    & shopping     & on-topic     \\
+Q1/test/notmytopic\textbackslash{}1.txt & non-shopping & off-topic    \\
+Q1/test/notmytopic\textbackslash{}2.txt & non-shopping & off-topic    \\
+Q1/test/notmytopic\textbackslash{}3.txt & non-shopping & off-topic    \\
+Q1/test/notmytopic\textbackslash{}4.txt & non-shopping & off-topic    \\
+Q1/test/notmytopic\textbackslash{}5.txt & non-shopping & off-topic   
+\end{longtable}
+\end{center}
+\lstinputlisting[language=Python,caption=This contained all the functions meant for classifying classify.py, label=Q1a:import,firstnumber=1,firstline=1,lastline=142]{classify.py}
+\lstinputlisting[language=Python,caption=The driver for training testing the data files trainClassify.py, label=Q1b:import,firstnumber=1,firstline=1,lastline=93]{trainClassify.py}
+\subsection*{Discussion}
+\emph{From the table \ref{tab:long}, I did not have any emails classified wrongly.\\ \\}
+\emph{I followed these instruction below:}
+    \begin{itemize}
+        \item In Listing \ref{Q1a:import} classify.py has all the necessary function to run the classify.
+        \begin{list}{$\circ$}
+            \item From line 13 to line 23 the getwords(doc) function splits a document into a list of words by dividing on any character that isn't a letter. The words are all in lower letter. The retrieves only unique words from the list using a dictionary
+            \item From line 25 to line 99, the basic\_classifier class helps defined necessary function that are used in naivabayes() function in line 102 
+            \item basic\_classifier uses three instances variables fc(stores count for different features in the different classifications), cc(a dictionary type that has the number of times every classification has been used), getfeatures (extracts the features from the items being classified )
+           \item Plus other helper functions - incf(),incc(),fcount(),catcount(),totalcount(),categories()- to increment and access the counts to store training data in a file or db
+           \item train() function to help process training data by extracting words and updating counts
+           \item fprob() displays the probability that a word appears in a category by using the Multiple Bernouli method
+           \item weightedprob() This function returns the weighted probability of Pr(w|c) using assumed probablities
+           
+           \item In lines 102 to line 142 is used naivebayes() function, I had to change the argument from classifier to basic\_classifier and classifier.\_\_init\_\_(self,getfeatures) to \\ basic\_classifier.\_\_init\_\_(self,getfeatures) since I am not using the sql one.
+           \item the docprob function extracts the features of the word and multiply all of the weighted probabilities together which give the overall document probability. Pr(d|c)
+           \item prob function uses Bayes's rule to calculate the probability (c|d)
+        \end{list}
+        \item In Listing \ref{Q1b:import}, trainClassify.py I used it to perform the following tasks as a driver
+            \begin{list}{$\circ$}
+                \item In lines 19 to 26 sampleTrain() function will be used to train a text file for on-topic and off-topic
+                \item Lines 32 to 50 first trains textfiles that where on topic and appending it to the good list then trains the off-topic and appends it to the badList variable. In line 55 and 56 the neccessary call to run the functio is called.
+                \item Once classification is done, I created a dataFrame to keep track of the final result of the predicted values, the actual values and pathnames as columns.
+                \item Lines 63 to 75 handles running the test data files that on-topic and saves it in a pandas dataframe table.
+                \lstinputlisting[language=Python,caption= Snapshot of trainClassify.py test data for on-topic, label=Q1b:import,firstnumber=63,firstline=63,lastline=75]{trainClassify.py}
+                \item Lines 79 to 91 handles running the test data files that off-topic and saves it in the same pandas dataframe variable table.
+                \lstinputlisting[language=Python,caption= Snapshot of trainClassify.py test data for off-topic, label=Q1b:import,firstnumber=79,firstline=79,lastline=91]{trainClassify.py}
+                \item I finally save the pandata dataframe as final.csv file in Q2 folder, in line 92
+                \lstinputlisting[language=Python,caption= Snapshot of trainClassify.py saving final result as a csv file, label=Q1b:import,firstnumber=92,firstline=92,lastline=92]{trainClassify.py}
+                \item Table \ref{tab:long}, shows the final result.
+            \end{list}
+    \end{itemize}
+
+\section*{Q3}
+\emph{Draw a confusion matrix for your classification results (see Module 13, slides 40, 42, 43).
+\begin{itemize}
+    \item This should be a table in Markdown or LaTeX, not a screenshot of output or image generated by another program. There's an example of a LaTeX confusion matrix in the Overleaf report template.
+\end{itemize}
+Based on the results in the confusion matrix, how well did the classifier perform? \\ \\Would you prefer an email classifier to have more false positives or more false negatives? Why?}
+\subsection*{\color{blue}{Answer \\}}
+\begin{table}[h]
+\centering
+\caption{Confusion Matrix For result in Q2}
+\label{tbl:confusion}
+\begin{tabular}{l|l|c|c|}
+\multicolumn{2}{c}{}&\multicolumn{2}{c}{Actual}\\
+\cline{3-4}
+\multicolumn{2}{c|}{}&Shopping&Non-shopping\\
+\cline{2-4}
+\multirow{2}{*}{Predicted}& Shopping & 5 (TP) & 0 (FP)\\
+\cline{2-4}
+& Non-shopping & 0 (FN) & 5 (TN) \\
+\cline{2-4}
+\end{tabular}
+\end{table}
+
+\subsection*{\\ Discussion}
+
+\emph{Based on the result from the confusion matrix the classifier program did a perfect job, since there was not values for the False negatives and False Positives.
+\\ Personally I would want the email classifier to have less false positive and more false negative because I want more email well classified in the right category - I do not mind if I loose documents that are meant for shopping categories as long as all documments in shopping category is shopping email I am good. \\ \\}
+\emph{I followed these instruction below:}
+    \begin{itemize}
+        \item 
+    \end{itemize}
+
+
+
+\section*{Q4. (Extra credit, 1 point)}
+\emph{\\
+Report the precision and accuracy scores of your classification results (see Module 13, slide 43). Include the formulas you used to compute these values.}
+\subsection*{\color{blue}{Answer}}
+\emph{Formular for precision\\ P = tp/(tp + fp) = 5/(5+5) =5/10 =0.5\\ \\Formular for Recall\\ \\  R = tp/(tp+fn) =5/(5+0) =1}
+
+
+\section*{Q5.  (Extra credit, 2 point)}
+\emph{Tune your classifier by updating weights to obtain better classification results. You may want to change the default weights (weight, ap) given to weightedprob() or the threshold used for the Bayesian classifier or change how the words are extracted from the document (for this you will need to re-train the model). Report the changes you made, re-run your Testing dataset, and show that the performance improved (either by using the confusion matrix or by computing precision and accuracy).\\ 
+If your classifier got all of the items correct in Q2, change the weights to make the classifier perform worse and discuss the results.}
+\subsection*{\color{blue}{Answer}}
+\lstinputlisting[language=Python,caption=Weight and ap tuning to make the classify wrongly.  snapshot classify.py, label=Q5a:import,firstnumber=87,firstline=87,lastline=87]{classify.py}
+\subsection*{Discussion}
+\emph{I followed these instruction below:}
+    \begin{itemize}
+        \item When I used the weight value and ap value from Listing \ref{Q5a:import}, I noticed that the classifier wrongly classified\\ Q1/test/notmytopic\textbackslash1.txt \\ classified Q1/test/notmytopic\textbackslash2.txt \\classified Q1/test/notmytopic\textbackslash3.txt \\ classified as  on-topic instead of off-topic.\\ \\ Table \ref{tab:long2} shows the resulting output
+        \begin{center}
+\begin{longtable}{|l|l|l|}
+\caption{Result of after Changing weight value from 1 to 15} \label{tab:long2} \\
+
+\hline  
+\multicolumn{1}{|c|}{\textbf{Filename}} & 
+\multicolumn{1}{|c|}{\textbf{actualTopic}}  &
+\multicolumn{1}{|c|}{\textbf{classifiedAs}} 
+\\ \hline 
+\endfirsthead
+
+\multicolumn{2}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline 
+\multicolumn{1}{|c|}{\textbf{Filename}} & 
+\multicolumn{1}{|c|}{\textbf{actualTopic}}  &
+\multicolumn{1}{|c|}{\textbf{classifiedAs}} 
+\\ \hline 
+\endhead
+
+\hline \multicolumn{3}{|c|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+Q1/test/mytopic\textbackslash{}1.txt    & shopping     & on-topic     \\
+Q1/test/mytopic\textbackslash{}2.txt    & shopping     & on-topic     \\
+Q1/test/mytopic\textbackslash{}3.txt    & shopping     & on-topic     \\
+Q1/test/mytopic\textbackslash{}4.txt    & shopping     & on-topic     \\
+Q1/test/mytopic\textbackslash{}5.txt    & shopping     & on-topic     \\
+Q1/test/notmytopic\textbackslash{}1.txt & non-shopping & on-topic     \\
+Q1/test/notmytopic\textbackslash{}2.txt & non-shopping & on-topic     \\
+Q1/test/notmytopic\textbackslash{}3.txt & non-shopping & on-topic     \\
+Q1/test/notmytopic\textbackslash{}4.txt & non-shopping & off-topic    \\
+Q1/test/notmytopic\textbackslash{}5.txt & non-shopping & off-topic    
+\end{longtable}
+\end{center}
+    \item confusion metrics is below
+        \begin{table}[h]
+        \centering
+        \caption{Confusion Matrix result for table \ref{tab:long2}}
+        \label{tbl:confusion}
+        \begin{tabular}{l|l|c|c|}
+        \multicolumn{2}{c}{}&\multicolumn{2}{c}{Actual}\\
+        \cline{3-4}
+        \multicolumn{2}{c|}{}&Shopping&Non-shopping\\
+        \cline{2-4}
+        \multirow{2}{*}{Predicted}& Shopping & 5 (TP) & 3 (FP)\\
+        \cline{2-4}
+        & Non-shopping & 0 (FN) & 2 (TN) \\
+        \cline{2-4}
+        \end{tabular}
+        \end{table}
+    \end{itemize}
+
+
+
+\section*{References}
+\begin{itemize}
+    \item {\url{https://github.com/arthur-e/Programming-Collective-Intelligence/blob/master/chapter6/docclass.py}}
+     \item {\url{https://docs.google.com/presentation/d/1OpfBDl2YEE7AONVeKUyHA-J7a1mRjncD7cen8F6BG1A/edit#slide=id.g7f83ebe645_0_0}}
+      \item {\url{https://github.com/cs432-websci-master/public/blob/main/spr21/432_PCI_Ch06.ipynb}}
+\end{itemize}
+
+\end{document}
+

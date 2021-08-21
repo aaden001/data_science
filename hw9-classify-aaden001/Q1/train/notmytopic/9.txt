@@ -1,0 +1,111 @@
+Medium daily digest
+TODAY’S HIGHLIGHTS
+
+Multivariate time series forecasting
+Vector Autoregression (VAR) implementation in Python
+Towards Data Science
+Mahbubul Alam in Towards Data Science·7 min readMember only content
+Simple Way of Evaluating Trading Strategy
+Designing a financial trading strategy
+Sarit Maitra
+Sarit Maitra·7 min readMember only content
+Beware of the traps?—?Quantitative Trading mistakes
+The world of quantitative finance is a fascinating world. That said, when using this powerful tool we can…
+Harel Jacobson
+Harel Jacobson·12 min read
+Web Apps Aren’t the Future
+Hey Siri, what’s next?
+CodeX
+Mika Yeap in CodeX·3 min readMember only content
+FROM CREATORS YOU’RE ENJOYING
+
+Build and Run a Docker Container for your Machine Learning Model
+A quick and easy build of a Docker container with a simple machine learning model
+Towards Data Science
+Xavier Vasques in Towards Data Science·4 min read
+IN CASE YOU MISSED IT
+
+Why Does Stationarity Matter in Time Series Analysis?
+Learn the Fundamental Rule of Time Series Analysis
+Towards Data Science
+Rayhaan Rasheed in Towards Data Science·4 min readMember only content
+7 tools I use every day?—?Home Edition
+I’ve been lucky enough to discover some good new desktop and coding tools via Medium and dev.to lately. I…
+Level Up Coding
+Paul Walker in Level Up Coding·4 min readMember only content
+5 Online Courses I Took as a Self-Taught Data Scientist
+After taking over 36 courses, here are my five recommendations
+Better Programming
+Christopher Zita in Better Programming·7 min readMember only content
+QUICK READS
+
+Why I built a backtesting software for stock market investors
+Hi there! My name is Ivan and I’m the founder of PyInvesting.com. I’m passionate about technology and finance…
+DataDrivenInvestor
+Ivann Fok in DataDrivenInvestor·4 min readMember only content
+Why You Should NOT Use ARIMA to Forecast Demand
+The article below is a summary of one of my LinkedIn posts. If you are interested in such debates, let’s…
+Analytics Vidhya
+Nicolas Vandeput in Analytics Vidhya·2 min readMember only content
+Angular vs React: The 2021’s winner is…
+The first question of people who hear me saying that I worked professionally with both frameworks, Angular…
+Eliran Elnasi
+Eliran Elnasi·4 min read
+BASED ON YOUR READING HISTORY
+
+Implementing Facebook Prophet efficiently
+If you have ever worked with time series predictions, I am quite sure you are well aware of the strains and…
+Towards Data Science
+Ruan van der Merwe in Towards Data Science·12 min read
+Analyzing time series data in Pandas
+In my previous tutorials, we have considered data preparation and visualization tools such as Numpy, Pandas…
+Towards Data Science
+Ehi Aigiomawu in Towards Data Science·9 min read
+How to efficiently loop through Pandas DataFrame
+If working with data is part of your daily job, you will likely run into situations where you realize you…
+The Startup
+Wei Xia in The Startup·10 min readMember only content
+BEST IN JAVASCRIPT
+
+Part Of Why I Think React Is Junk
+With Actual Examples!
+CodeX
+Jason Knight in CodeX·19 min readMember only content
+I Almost Got Fired for Choosing React in Our Enterprise App
+React was supposed to ease our development. Instead, it created roadblocks
+Better Programming
+Razvan Dragomir in Better Programming·8 min readMember only content
+7 Tips for Becoming a Competent JavaScript Developer
+To move towards the next level, let’s focus on certain areas
+Better Programming
+Gerard van der Put in Better Programming·9 min readMember only content
+BEST IN DATA SCIENCE
+
+The Math Problems from Good Will Hunting, w/ solutions
+How do you like them apples?
+Cantor’s Paradise
+Jørgen Veisdal in Cantor’s Paradise·9 min readMember only content
+Florence Nightingale is a Design Hero
+Two hundred years ago, one of our data viz pioneers was born. Today we remember her life and honor her…
+Nightingale
+RJ Andrews in Nightingale·13 min readMember only content
+Louisiana Loses Its Boot
+The boot-shaped state isn’t shaped like that anymore. So, we revised its iconic outline to reflect the truth…
+Matter
+Brett Anderson in Matter·32 min readMember only content
+BEST IN PROGRAMMING
+
+The Future of Coding Is ‘No Code’
+Drag-and-drop tools make anyone a maker
+OneZero
+Owen Williams in OneZero·4 min readMember only content
+Notes to Myself on Software Engineering
+A laundry list of personal reminders
+François Chollet
+François Chollet·7 min readMember only content
+See more of what you like and less of what you don’t.
+Control your recommendations
+Read or write from anywhere.
+Get Medium on the App StoreGet Medium on Google Play
+Sent by Medium·P.O. Box 602, San Francisco, CA 94104-0602
+Unsubscribe from this type of email·Switch to the Weekly Digest·Careers·Help Center·Privacy Policy·Terms of service
