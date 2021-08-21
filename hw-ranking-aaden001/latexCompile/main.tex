@@ -1,0 +1,256 @@
+\documentclass[12pt]{article}
+\usepackage{times} 			% use Times New Roman font
+\usepackage{longtable}
+\usepackage[margin=1in]{geometry}   % sets 1 inch margins on all sides
+\usepackage{hyperref}               % for URL formatting
+\usepackage[pdftex]{graphicx}       % So includegraphics will work
+\setlength{\parskip}{1em}           % skip 1em between paragraphs
+\usepackage{indentfirst}            % indent the first line of each paragraph
+\usepackage{datetime}
+\usepackage[small, bf]{caption}
+\usepackage{listings}               % for code listings
+\usepackage{xcolor}                 % for styling code
+\usepackage{multirow}
+
+
+%New colors defined below
+\definecolor{backcolour}{RGB}{246, 246, 246}   % 0xF6, 0xF6, 0xF6
+\definecolor{codegreen}{RGB}{16, 124, 2}       % 0x10, 0x7C, 0x02
+\definecolor{codepurple}{RGB}{170, 0, 217}     % 0xAA, 0x00, 0xD9
+\definecolor{codered}{RGB}{154, 0, 18}         % 0x9A, 0x00, 0x12
+
+%Code listing style named "gcolabstyle" - matches Google Colab
+\lstdefinestyle{gcolabstyle}{
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{backcolour},   
+  commentstyle=\itshape\color{codegreen},
+  keywordstyle=\color{codepurple},
+  stringstyle=\color{codered},
+  numberstyle=\ttfamily\footnotesize\color{darkgray}, 
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+\lstset{style=gcolabstyle}      %set gcolabstyle code listing
+
+% to make long URIs break nicely
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+
+% for fancy page headings
+\usepackage{fancyhdr}
+\setlength{\headheight}{13.6pt} % to remove fancyhdr warning
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small \thepage}
+\lhead{\small HW3, Adeniran}  % EDIT THIS, REPLACE # with HW number
+\chead{\small CS 532, Spring 2021} 
+
+%-------------------------------------------------------------------------
+\begin{document}
+
+\begin{centering}
+{\large\textbf{HW 3 - Ranking Webpages}}\\ % EDIT THIS
+                                % REPLACE # with HW num and ADD title
+Adeniran Adeniyi\\                     % EDIT THIS
+Sunday, March 7th 2021 by 11:59pm\\                      % EDIT THIS
+\end{centering}
+
+%-------------------------------------------------------------------------
+
+% The * after \section just says to not number the sections
+%----------------------------Q1111111111111111111111111111111111
+
+\section*{Q1}
+\emph{For the following tasks, consider which items could be scripted, either with a shell script or with Python. You may even want to create separate scripts for different tasks. It's up to you to determine the best way to collect the data.\\}
+\begin{itemize}
+    \item  curl, wget, or lynx are all good candidate programs to use. We want just the raw HTML, not the images, stylesheets, etc.
+\end{itemize}
+\emph{Download the content of the 1000 unique URIs you gathered in HW2. Plan ahead because this will take time to complete.\\ \\
+You'll need to save the content returned from each URI in a uniquely-named file. The easiest thing is to use the URI itself as the filename, but it's likely that your shell will not like some of the characters that can occur in URIs (e.g., "?", "\&"). You might want to hash the URIs to associate them with their respective filename.\\ \\
+For example,
+\href{ https://www.cnn.com/world/live-news/nasa-mars-rover-landing-02-18-21}{\color{red}{ https://www.cnn.com/world/live-news/nasa-mars-rover-landing-02-18-21}} hashes to 2fc5f9f05c7a69c6d658eb680c7fa6ee:
+}
+\begin{lstlisting}[numbers=none]
+% echo -n "https://www.cnn.com/world/live-news/nasa-mars-rover-landing-02-18-21" | md5
+2fc5f9f05c7a69c6d658eb680c7fa6ee
+\end{lstlisting}
+\emph{(md5 might be md5sum on some machines; note the -n in echo -- this removes the trailing newline.) \\ \\ Using this as an example, here are some ways you could download the HTML from that URI using the hash as the filename:}
+\begin{itemize}
+    \item \begin{lstlisting}[numbers=none]
+    % curl "https://www.cnn.com/world/live-news/nasa-mars-rover-landing-02-18-21" > 2fc5f9f05c7a69c6d658eb680c7fa6ee.html
+\end{lstlisting}
+    \item \begin{lstlisting}[numbers=none]
+    % wget -O 2fc5f9f05c7a69c6d658eb680c7fa6ee.html https://www.cnn.com/world/live-news/nasa-mars-rover-landing-02-18-21
+\end{lstlisting}
+    \item \begin{lstlisting}[numbers=none]
+    % lynx -source https://www.cnn.com/world/live-news/nasa-mars-rover-landing-02-18-21 > 2fc5f9f05c7a69c6d658eb680c7fa6ee.html
+    \end{lstlisting}
+\end{itemize}
+\emph{Now use a tool to remove (most) of the HTML markup for all 1000 HTML documents. python-boilerpipe will do a fair job, see \\}
+\href{http://ws-dl.blogspot.com/2017/03/2017-03-20-survey-of-5-boilerplate.html}{\color{red}{http://ws-dl.blogspot.com/2017/03/2017-03-20-survey-of-5-boilerplate.html}} 
+\emph{ :}
+\begin{lstlisting}[numbers=none]
+    from boilerpipe.extract import Extractor
+    extractor = Extractor(extractor='ArticleExtractor', html=html)
+    extractor.getText()
+\end{lstlisting}
+\emph{Keep both files for each URI (i.e., raw HTML and processed). Upload both sets of files to your GitHub repo.}
+\subsection*{\color{blue}{Answer}}
+ \lstinputlisting[language=Python,caption=dataCollections.ps1, label=codeOne:import,firstnumber=1,firstline=1,lastline=24]{dataCollection.ps1}
+  \lstinputlisting[language=Python,caption=boiler-plate-removal.py, label=codeOne:import,firstnumber=1,firstline=1,lastline=38]{boiler-plate-removal.py}
+\subsection*{Discussion}
+\emph{I followed these instruction below:}
+    \begin{itemize}
+        \item Download the content of the 1000 unique URIs you gathered in HW2. Plan ahead because this will take time to complete.
+        \subsection*{\color{blue}{Answer}}
+            \begin{list}{$\circ$}
+                \item I used power-shell scripting doing this task. I used a docker image of curl to use the curl command on windows power-shell to in line 12 of dataCollection.ps1.
+                The curl option L to follow redirects and the variable \$line has the part to the location of dict.txt which has the list of a 1000 url. This command gets only the html document from the URI-R, it also creates these html files in   Q1\textbackslash html folder.
+            \end{list}
+            \lstinputlisting[language=Python,caption=snapshot of dataCollections.ps1, label=codeOne:import,firstnumber=12,firstline=12,lastline=12]{dataCollection.ps1}
+            
+        \item You'll need to save the content returned from each URI in a uniquely-named file. The easiest thing is to use the URI itself as the filename, but it's likely that your shell will not like some of the characters that can occur in URIs (e.g., "?", "\&"). You might want to hash the URIs to associate them with their respective filename. \\ For example,  \href{https://www.cnn.com/world/live-news/nasa-mars-rover-landing-02-18-21}{ \color{red}{https://www.cnn.com/world/live-news/nasa-mars-rover-landing-02-18-21}} hashes to 2fc5f9f05c7a69c6d658eb680c7fa6ee:
+        \subsection*{\color{blue}{Answer}}
+            \begin{list}{$\circ$}
+                \item I converted the url gotten from the dict.txt to an MD5 hash in line 5 to 9
+            \end{list}
+        \lstinputlisting[language=Python,caption=snapshot of dataCollections.ps1, label=codeOne:import,firstnumber=5,firstline=5,lastline=9]{dataCollection.ps1}
+        
+        \item \emph{Now use a tool to remove (most) of the HTML markup for all 1000 HTML documents. python-boilerpipe will do a fair job, see href{http://ws-dl.blogspot.com/2017/03/2017-03-20-survey-of-5-boilerplate.html}{http://ws-dl.blogspot.com/2017/03/2017-03-20-survey-of-5-boilerplate.html}}
+        \subsection*{\color{blue}{Answer}}
+            \begin{list}{$\circ$}
+                \item I used boilerpy3  which is a better version of boilerpipe to do the extraction of the html. I grabbed all the html document files in \textbackslash Q1 \textbackslash html extracted them with boilerpy3 and deposited the result in \textbackslash Q1 \textbackslash processed folder.
+                
+                \item One major issues I had encountered was UTF encoding problems. This caused the boilerpy3 not work on the html string I feed it. So i noticed the output of the processed html files to text file automatically came out from power-shell as UTF UTF8BOM when using the file in dataCollections.ps1
+                In other for the extraction tool to do its job, I had to reconfigure the text files gotten from processed folder to UTF-16 encoding . In line 22 of boiler-plate-removal.py 
+               \lstinputlisting[language=Python,caption=snap shot of boiler-plate-removal.py, label=codeOne:import,firstnumber=22,firstline=22,lastline=22]{boiler-plate-removal.py}
+               \item I used the getDistinctDomain.py to clean the final.csv file to produce the actualFinal.csv result.Only ten list was printed to the csv file, this had 10 distinct URL domains
+               
+            \end{list}
+    \end{itemize}
+
+\section*{Q2}
+\subsection*{\color{blue}{Answer}}
+\lstinputlisting[language=bash,caption=TF.ps1, label=codeOne:import,firstnumber=1,firstline=1,lastline=62]{TF.ps1}
+\lstinputlisting[language=Python,caption=getDistinctDomain.py, label=codeOne:import,firstnumber=1,firstline=1,lastline=51]{getDistinctDomain.py}
+\subsection*{Discussion}
+\emph{I followed these steps  below:}
+    \begin{itemize}
+        \item I choose a query term coronavirus as seen on line 6 of TF.ps1
+        \item I Opened each of the generated text document to  search for the term. Power-shell as some easy ways to get the number of times the term appears in a textfile, seen in line 20 of TF.ps1 
+        \lstinputlisting[language=Python,caption=snap shot TF.ps1, label=codeOne:import,firstnumber=20,firstline=20,lastline=20]{TF.ps1}
+        \item I also got the total word count in the document using Measure-Object -word, line 22
+        \lstinputlisting[language=Python,caption=snap shot TF.ps1, label=codeOne:import,firstnumber=22,firstline=22,lastline=22]{TF.ps1}
+        \item I was able to compute the the TF using the formula\\ \\ TF(coronavirus)= (total occurrence of the word coronavirus in a document)/(the total word count in the document)
+        \item I avoided dividing by Zero since some of the text files had no content. I set the TF to be Zero when this occurs, see in line 25-31
+         \lstinputlisting[language=Python,caption=snap shot TF.ps1, label=codeOne:import,firstnumber=25,firstline=25,lastline=31]{TF.ps1}
+         \item using a hash table I created from a urlHash.csv file - i generated, contains filename and corresponding hashed values - I was able to associate matching text file to there URL. The urlHash.csv file is found in \textbackslash Q2 folder
+         \item The computation for every document with at least one term frequency was created to a csv file called final.csv. This file is located in  \textbackslash Q2 folder
+         \item IDF was calculated using the size of google's corpus of 55B and the search result obtained by using google browser which was 2.03 billion result.IDF = log2((Googles total size of corpus)/(search resutl of term on google browser)).The Calculation gave 4.76.
+         \TF-IDF was gotten by multiplying the result of TF and IDF above. 
+         
+    \end{itemize}
+
+\emph{ I manually configured the table below}
+\begin{center}
+    % Please add the following required packages to your document preamble:
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+%\begin{longtable}{|c|c|c|p{5cm}|}
+\begin{longtable}[c]{l|l|l|p{13cm}|}
+\caption{ Hits for the term "coronavirus", ranked by TF-IDF}
+\label{tab:my-table}\\
+TF & IDF & TF-IDF & URL                                                                                                                                                                                               \\
+\endfirsthead
+%
+\multicolumn{4}{c}%
+{{\bfseries Table \thetable\ continued from previous page}} \\
+ TF      & IDF  & TF-IDF & URL                                                                                                                                                                                               \\
+\endhead
+%
+0.01538 & 4.76 & 0.073  & https://www.newscientist.com/article/mg24933233-500-first-universal-coronavirus-vaccine-will-start-human-trials-this-year/                                                                        \\
+0.00814 & 4.76 & 0.039  & https://www.cbsnews.com/live-updates/coronavirus-china-outbreak-death-toll-infections-latest-updates-2020-02-17/                                                                                  \\
+0.00592 & 4.76 & 0.028  & https://www.donaldjtrump.com/media/study-hydroxychloroquine-significantly-lowers-coronavirus-death-rate/                                                                                          \\
+0.00556 & 4.76 & 0.026  & https://pittsburgh.cbslocal.com/2021/02/24/allegheny-county-3-uk-variants-covid-19/?utm\_source=dlvr.it\&utm\_medium=twitter                                                                      \\
+0.00535 & 4.76 & 0.025  & https://thewest.com.au/news/coronavirus/two-patients-given-wrong-dose-of-coronavirus-vaccine-ng-b881805132z?utm\_campaign=share-icons\&utm\_source=twitter\&utm\_medium=social\&tid=1614210946210 \\
+0.0049  & 4.76 & 0.023  & http://veronews.com/2021/02/24/coronavirus-in-irc-feb-24-update/   \\
+0.00477 & 4.76 & 0.023  & https://www.wcvb.com/article/biogen-conference-bostons-first-coronavirus-superspreader-event/35618145                                                                                             \\
+0.0042  & 4.76 & 0.02   & https://www.manorisd.net/site/default.aspx?PageType=3\&DomainID=
+4\&ModuleInstanceID=1600\&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108\&RenderLoc=0\&FlexDataID=10464\&PageID=1 \\
+0.0029  & 4.76 & 0.014  & https://www.cnbc.com/2021/02/24/house-democrats-aim-to-pass-1point9-trillion-covid-relief-bill-on-friday.html?utm\_source=dlvr.it\&utm\_medium=twitter                                            \\
+0.00158 & 4.76 & 0.008  & \href{}{}https://www.politicshome.com/thehouse/article/coronavirus-public-health-local-responsibility                                                                                                      \\
+\end{longtable}
+\end{center}
+
+
+\section*{Q3}
+\subsection*{\color{blue}{Answer}}
+% Please add the following required packages to your document preamble:
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\begin{longtable}[c]{ll}
+\caption{Page ranking per domain gotten from Question 2}
+\label{tab:my-table2}\\
+Pageranking & URL                             \\
+\endfirsthead
+%
+\multicolumn{2}{c}%
+{{\bfseries Table \thetable\ continued from previous page}} \\
+Pageranking & URL                             \\
+\endhead
+%
+0.7         & \href{https://www.cbsnews.com}{\color{red}{https://www.cbsnews.com}}         \\
+0.7         & \href{https://www.cnbc.com}{\color{red}{https://www.cnbc.com} }           \\
+0.6         & \href{https://www.newscientist.com   }{\color{red}{https://www.newscientist.com   }}  \\
+0.6         & \href{https://pittsburgh.cbslocal.com}{\color{red}{https://pittsburgh.cbslocal.com}} \\
+0.6         & \href{https://www.donaldjtrump.com}{\color{red}{https://www.donaldjtrump.com}}   \\
+0.5         & \href{https://www.politicshome.com}{\color{red}{https://www.politicshome.com}}    \\
+0.5         & \href{http://veronews.com}{\color{red}{http://veronews.com}}             \\
+0.5         & \href{https://www.manorisd.net/}{\color{red}{https://www.manorisd.net/}}       \\
+0.5         & \href{https://www.wcvb.com}{\color{red}{https://www.wcvb.com}}            \\
+0.5         & \href{https://thewest.com.au}{\color{red}{https://thewest.com.au}}          \\
+
+\end{longtable}
+\subsection*{Discussion}
+
+    \begin{itemize}
+        \item I used this \href{https://dnschecker.org/pagerank.php}{\color{red}{https://dnschecker.org/pagerank.php}} to obtain the page ranking for each domain
+        \item Comparing the result of the Table 2 to Table 1, depended of a number of factors 
+        \begin{list}{$\circ$}
+            \item I noticed that  using the various Page ranking website you gave us generated completely different result to one another.
+            \item  dnschecker.org in particular doesn't allow you to view domains that do not use secured http. I notice that some of the Page Ranking site allowed only secured http, for example
+            \href{https://www.prchecker.info/check_page_rank.php}{\color{red}{https://www.prchecker.info/check_page_rank.php}}
+            \item How well did the boiler plate removal tool extract the html content to text files.
+            \item On Average some of the domain that ranked higher also had a high TD-IDF. In conclusion it various result would differ on if the tools are technology used gave 100 \% efficiency. We can only derive few correlations to how authentic the webpage is to the domain of the webpage. 
+            \item Personally how authentic a webpage or it materials are is not solely dependent of how google or bing ranks the webpage alone. Over a large area I believe it very hard to quantify the relative importance/ranking of a webpage.  
+            
+        \end{list}
+
+       
+    \end{itemize}
+\section*{References}
+\begin{itemize}
+    \item { \url{https://stackoverflow.com/questions/10521061/how-to-get-an-md5-checksum-in-powershell}}
+    \item {\url{https://stackoverflow.com/questions/29889495/count-specific-string-in-text-file-using-powershell}}
+     
+    \item {\url{https://adamtheautomator.com/export-csv/}}
+    \item {\url{https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-if?view=powershell-7.1}}
+    \item {\url{https://ss64.com/ps/measure-object.html}}
+    \item {\url{https://kimconnect.com/powershell-convert-csv-into-hashtable/}}
+    \item {\url{https://devblogs.microsoft.com/scripting/use-a-powershell-cmdlet-to-count-files-words-and-lines/}}
+
+
+\end{itemize}
+
+\end{document}
+

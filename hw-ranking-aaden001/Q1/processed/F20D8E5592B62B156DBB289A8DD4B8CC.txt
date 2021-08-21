@@ -1,0 +1,33 @@
+COVID-19 antibodies were present for up to 3 months in people infected with coronavirus, NIH study finds
+By Austin Williams
+Email
+Medical studies finding possible long-term effects of COVID-19
+This study followed patients who had a mild case of COVID-19 for up to nine months after recovery - and found about a third of them had persisting symptoms.
+BETHESDA, Md. - Researchers from the National Institutes of Health say they have found evidence that people who have been previously infected by the novel coronavirus appear to be protected against reinfection, though the extent to which that protection holds up against emerging variants remains unclear.
+"The data from this study suggest that people who have a positive result from a commercial antibody test appear to have substantial immunity to SARS-CoV-2, which means they may be at lower risk for future infection," said Dr. Lynne Penberthy, associate director of NCI’s Surveillance Research Program, which led the study.
+"Additional research is needed to understand how long this protection lasts, who may have limited protection, and how patient characteristics, such as comorbid conditions, may impact protection. We are nevertheless encouraged by this early finding," Penberthy said.
+NIH researchers obtained test results from 3 million people who had undergone a COVID-19 antibody test between Jan. 1 and Aug. 23, 2020. Researchers said the sampling represented more than half of all commercial coronavirus antibody tests conducted in the U.S. at the time.
+Of the 3 million people who took the tests, nearly 12% tested positive for having COVID-19 antibodies.
+Antibody testing, or serology tests, became widely available in the U.S. in April last year. The tests are performed on a blood sample to detect antibodies produced to fight the infection. A positive antibody result means that at some point, that person was infected by the virus in the past.
+Advertisement
+Expert discusses CDC report estimating a year drop in US life expectancy
+Dr. Richard Wender, chair of Family Medicine and Community Health at Penn Medicine, discussed the CDC report estimating that U.S. life expectancy dropped a full year and what that means.
+Eleven percent of the people who were seropositive in the NIH study — or tested positive for COVID-19 antibodies — along with 9.5% of individuals who tested negative for antibodies were then given a nucleic acid amplification test (NAAT), also commonly known as a PCR test or polymerase chain reaction test, which is used to trace genetic material of the virus.
+NIH researchers studied the NAAT test results at various intervals starting from 0-30 days, 31-60 days, up to over 90 days and found that some people who have recovered from COVID-19 still had viral antibodies up to three months later.
+Still, NIH researchers noted that the exact duration of antibody protection is unknown, even though their findings support the idea that having the antibodies helps protect the individual from subsequent infection.
+Previous studies have suggested that antibodies in COVID-19 patients decline within weeks, precluding the possibility of widespread herd immunity.
+A study published in the scientific journal " The Lancet " found that as of July 2020, fewer than 10% of U.S. adults had developed COVID-19 antibodies amid the ongoing coronavirus pandemic.
+Epidemiologists define the herd immunity threshold for a given virus as the percentage of the population that must be immune to ensure that its introduction will not cause an outbreak. If enough people are immune, an infected person will likely come into contact only with people who are already immune rather than spreading the virus to someone who is susceptible.
+A separate study published on July 11, 2020 by researchers at King’s College London found that antibodies detected in the human body which fight the coronavirus declined after a few weeks.
+How long immunity lasts from natural infection is one of the big questions in the pandemic. Scientists still think reinfections are fairly rare and usually less serious than initial ones.
+The first confirmed case of reinfection with COVID-19 in the U.S. occurred in a 25-year-old man in Nevada, according to a paper published in October in the medical journal Lancet Infectious Diseases .
+RELATED: COVID-19 reinfection: Researchers confirm Nevada man got virus twice, second time 'more severe'
+At the time, researchers noted that reinfection with SARS-CoV-2 — the virus that causes COVID-19 — had been reported in at least four individuals worldwide.
+But now, mounting evidence shows that having already had COVID-19 may not protect against getting infected again with some of the new variants.
+In South Africa, a vaccine study found new infections with a variant in 2% of people who previously had an earlier version of the virus.
+In Brazil, several similar cases were documented with a new variant there. Researchers are exploring whether reinfections help explain a recent surge in the city of Manaus, where three-fourths of residents were thought to have been previously infected.
+In the United States, a study found that 10% of Marine recruits who had evidence of prior infection and repeatedly tested negative before starting basic training were later infected again. That work was done before the new variants began to spread, said one study leader, Dr. Stuart Sealfon of the Icahn School of Medicine at Mount Sinai in New York.
+California scientists also are investigating whether a recently identified variant may be causing reinfections or a surge of cases there.
+"We’re looking at that now," seeking blood samples from past cases, said Jasmine Plummer, a researcher at Cedars-Sinai Medical Center in Los Angeles.
+Dr. Howard Bauchner, editor-in-chief of the Journal of the American Medical Association, said it soon would report on what he called "the Los Angeles variant."
+The Associated Press contributed to this story. This story was reported from Los Angeles.

@@ -1,0 +1,38 @@
+AFL SuperCoach
+No Cookies
+To use this website, cookies must be enabled in your browser. To enable cookies, follow the instructions for your browser below.
+Facebook App: Open links in External Browser
+There is a specific issue with the Facebook in-app browser intermittently making requests to websites without cookies that had previously been set. This appears to be a defect in the browser which should be addressed soon. The simplest approach to avoid this problem is to continue to use the Facebook app but not use the in-app browser. This can be done through the following steps:
+1. Open the settings menu by clicking the hamburger menu in the top right
+2. Choose “App Settings” from the menu
+3. Turn on the option “Links Open Externally” (This will use the device’s default browser)
+Enabling Cookies in Internet Explorer 7, 8 & 9
+1. Open the Internet Browser
+2. Click Tools > Internet Options > Privacy > Advanced
+3. Check Override automatic cookie handling
+4. For First-party Cookies and Third-party Cookies click Accept
+5. Click OK and OK
+Enabling Cookies in Firefox
+1. Open the Firefox browser
+2. Click Tools > Options > Privacy > Use custom settings for history
+3. Check Accept cookies from sites
+4. Check Accept third party cookies
+5. Select Keep until: they expire
+6. Click OK
+Enabling Cookies in Google Chrome
+1. Open the Google Chrome browser
+2. Click Tools > Options > Privacy Options > Under the Hood > Content Settings
+3. Check Allow local data to be set
+4. Uncheck Block third-party cookies from being set
+5. Uncheck Clear cookies
+6. Close all
+Enabling Cookies in Mobile Safari (iPhone, iPad)
+1. Go to the Home screen by pressing the Home button or by unlocking your phone/iPad
+2. Select the Settings icon.
+3. Select Safari from the settings menu.
+4. Select ‘accept cookies’ from the safari menu.
+5. Select ‘from visited’ from the accept cookies menu.
+6. Press the home button to return the the iPhone home screen.
+7. Select the Safari icon to return to Safari.
+8. Before the cookie settings change will take effect, Safari must restart. To restart Safari press and hold the Home button (for around five seconds) until the iPhone/iPad display goes blank and the home screen appears.
+9. Select the Safari icon to return to Safari.

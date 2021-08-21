@@ -1,0 +1,31 @@
+Home Health News A New Coronavirus Variant Is Spreading in New York, Researchers Report
+A New Coronavirus Variant Is Spreading in New York, Researchers Report
+Health & Medical Reviews and News 23:31
+The variant contains a mutation thought to help the virus dodge the immune system, but vaccines should still be effective, scientists said.
+A new form of the coronavirus is spreading rapidly in New York City, and it carries a worrisome mutation that may weaken the effectiveness of vaccines, two teams of researchers have found.
+The new variant, called B.1.526, first appeared in samples collected in the city in November. By the middle of this month, it accounted for about one in four viral sequences appearing in a database shared by scientists.
+One study of the new variant, led by a group at Caltech, was posted online on Tuesday. The other, by researchers at Columbia University, has been submitted to a preprint server but is not yet public.
+Neither study has been vetted by peer review nor published in a scientific journal. But the consistent results suggest that the variant’s spread is real, experts said.
+“It’s not particularly happy news,” said Michel Nussenzweig, an immunologist at Rockefeller University who was not involved in the new research. “But just knowing about it is good because then we can perhaps do something about it.”
+Dr. Nussenzweig said he was more worried about the variant in New York than the one quickly spreading in California. Yet another contagious new variant, discovered in Britain, now accounts for about 2,000 cases in 45 states. It is expected to become the most prevalent form of the coronavirus in the United States by the end of March.
+Researchers have been scrutinizing the genetic material of the virus to see how it might be changing. They examine genetic sequences of virus taken from a small proportion of infected people to chart the emergence of new versions.
+The Caltech researchers discovered the rise in B.1.526 by scanning for mutations in hundreds of thousands of viral genetic sequences in a database called GISAID. “There was a pattern that was recurring, and a group of isolates concentrated in the New York region that I hadn’t seen,” said Anthony West, a computational biologist at Caltech.
+He and his colleagues found two versions of the coronavirus increasing in frequency: one with the E484K mutation seen in South Africa and Brazil, which is thought to help the virus partially dodge the vaccines; and another with a mutation called S477N, which may affect how tightly the virus binds to human cells.
+By mid-February, the two together accounted for about 27 percent of New York City viral sequences deposited into the database, Dr. West said. (For the moment, both are grouped together as B.1.526.)
+The Columbia University researchers took a different approach. They sequenced 1,142 samples from patients at their medical center. They found that 12 percent of people with the coronavirus had been infected with the variant that contains the mutation E484K.
+Patients infected with virus carrying that mutation were about six years older on average and more likely to have been hospitalized. While the majority of patients were found in neighborhoods close to the hospital — particularly Washington Heights and Inwood — there were several other cases scattered throughout the metropolitan area, said Dr. David Ho, director of the Aaron Diamond AIDS Research Center.
+“We see cases in Westchester, in the Bronx and Queens, the lower part of Manhattan and in Brooklyn,” Dr. Ho said. “So it seems to be widespread. It’s not a single outbreak.”
+The team also identified six cases of the variant that pummeled Britain, two infections with a variant identified in Brazil, and one case of the variant that took over in South Africa. The latter two had not been reported in New York City before, Dr. Ho said.
+The university investigators have alerted the authorities in New York State and in the city, as well as the Centers for Disease Control and Prevention, Dr. Ho said. He and his colleagues plan to sequence about 100 viral genetic samples a day to monitor the variants’ rise.
+Other experts said the sudden appearance of coronavirus variants was worrying.
+“Given the involvement of E484K or S477N, combined with the fact that the New York region has a lot of standing immunity from the spring wave, this is definitely one to watch,” said Kristian Andersen, a virologist at the Scripps Research Institute in San Diego, who was not involved in the new research efforts.
+The E484K mutation has independently cropped up in many different parts of the world, an indication that it offers the virus a significant advantage.
+“Variants that have an advantage are going to rise pretty fast in frequency, especially when numbers are coming down over all,” said Andrew Read, an evolutionary microbiologist at Penn State University.
+Dr. Ho's team reported in January that the monoclonal antibodies made by Eli Lilly, and one of the monoclonal antibodies in a cocktail made by Regeneron, are powerless against the variant identified in South Africa.
+And several studies have now shown that variants containing the E484K mutation are less susceptible to the vaccines than was the original form of the virus. The mutation interferes with the activity of a class of antibodies that nearly everyone makes, Dr. Nussenzweig said.
+“People who have recovered from the coronavirus or who have been vaccinated are very likely to be able to fight this variant off, there’s no doubt about that,” he said. But “they may get a little bit sick from it.”
+They may also infect others and keep the virus circulating, which might delay herd immunity, he added.
+But other experts were slightly more optimistic. “These things are a little bit less well controlled by vaccine, but it’s not orders of magnitude down, which would terrify me,” Dr. Read said.
+As the virus continues to evolve, the vaccines will need to be tweaked, “but in the scheme of things, those aren’t huge worries compared to not having a vaccine,” Dr. Read said. “I’d say the glass is three-quarters full, compared to where we were last year.”
+Subscribe to Our Posts via Email
+Tags

@@ -1,0 +1,1 @@
+I used this https://dnschecker.org/pagerank.phpfor the page ranking

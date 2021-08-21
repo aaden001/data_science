@@ -1,0 +1,3 @@
+Redirect Notice
+The previous page is sending you to https://www.nytimes.com/interactive/2020/world/europe/united-kingdom-coronavirus-cases.html .
+If you do not want to visit that page, you can return to the previous page .

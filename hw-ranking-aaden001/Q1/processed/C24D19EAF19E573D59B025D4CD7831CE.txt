@@ -1,0 +1,46 @@
+Asset 2
+Enter a country or territory to find out the progress of the vaccine rollout
+No vaccine data available. In some cases there may be a delay between announcements of vaccine programmes getting underway and data on doses delivered becoming available.
+Source: Our World in Data, ONS, gov.uk dashboard
+Where are cases still high?
+As populations across the world await widespread vaccine rollout, cases are either stable or falling in most regions at the moment.
+Here's a breakdown of the situation by region:
+Europe
+Daily cases had been falling in most European countries earlier this month, but several are now seeing a rise in infections.
+France, Italy, Russia and the Czech Republic have seen the highest numbers in recent weeks.
+Lockdown measures were tightened in many of the worst-affected countries over the winter but some restrictions are now being lifted.
+What restrictions are in place in Europe?
+North America
+The US has recorded nearly 30 million cases and more than 510,000 deaths, the highest figures in the world.
+Daily cases were at record levels in early January but they have fallen substantially in the last few weeks.
+Canada, which has a far lower death rate than the US, also experienced a winter surge but daily cases have also been falling recently.
+Imagining what 500,000 lost lives look like
+Asia
+Asia was the centre of the initial outbreak that spread from China in early 2020, but the number of cases and deaths there has been lower than in Europe and North America.
+The region saw a large rise in the number of cases last autumn, driven by a surge in infections in India, one of the most densely populated countries in the world.
+India has seen more than 11 million confirmed cases, the second-highest in the world after the US, but the number of daily infections has fallen in recent months.
+Middle East
+Several countries in the Middle East have had deadly coronavirus outbreaks over the past 12 months, with Iran and Israel having seen the highest numbers.
+Cases are now falling in Israel but several countries in the region are currently seeing renewed outbreaks, including Iran and Iraq.
+Israel's efforts have been helped by its vaccination programme, with about eight million doses administered.
+Africa
+Africa has recorded nearly four million cases and more than 100,000 deaths - but the true extent of the pandemic in many African countries is not known as testing rates are low.
+South Africa, with about 1.5 million cases, is the worst affected country on the continent, according to official figures.
+Morocco, Egypt, Ethiopia, Tunisia, Libya, Algeria, Nigeria and Kenya have also recorded more than 100,000 cases.
+Ivory Coast became the first country to roll out vaccines offered by UN-backed Covax programme, starting with healthcare workers on Monday.
+Ivorian authorities will initially receive half a million doses of the AstraZeneca Oxford vaccine.
+Ghana and Nigeria are also due to start their inoculations this week.
+Coronavirus in Africa tracker
+Latin America
+In Latin America, there has been particular concern about a variant of the virus that has been spreading rapidly in Brazil.
+The country has more than 10 million confirmed cases and 250,000 deaths - the world's second highest death toll. It is currently in the middle of a surge in infections.
+Argentina, Colombia and Mexico have all recorded more than two million cases while Peru has seen more than one million.
+Oceania
+Australia and New Zealand have been praised for their response to the pandemic, with both countries having seen comparatively few deaths.
+In a sign of how effective their lockdown measures have been, both New Zealand and Australia currently have a lower average number of cases than French Polynesia, a sprawling network of islands in the Pacific Ocean.
+Other islands in the region have tried to remain free of coronavirus, but most have seen at least a few cases.
+Papua New Guinea is currently the worst-affected country in the region after seeing a recent spike in cases.
+How did coronavirus spread?
+Covid-19 was first detected in the city of Wuhan, China, in late 2019 but the outbreak spread quickly across the globe in the first months of 2020.
+It was declared a global pandemic by the WHO on 11 March 2020.
+A pandemic is when an infectious disease is passing easily from person to person in many parts of the world at the same time.

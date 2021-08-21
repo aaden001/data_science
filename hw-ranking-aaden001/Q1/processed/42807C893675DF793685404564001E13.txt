@@ -1,0 +1,4 @@
+RSS Feed
+License: All the material produced by Our World in Data, including interactive visualizations and code, are completely open access under the Creative Commons BY license . You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited. All other material, including data produced by third parties and made available by Our World in Data, is subject to the license terms from the original third-party authors.
+Please consult our full legal disclaimer .
+Our World In Data is a project of the Global Change Data Lab , a registered charity in England and Wales (Charity Number 1186433).

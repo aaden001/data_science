@@ -1,0 +1,14 @@
+8,645
+1,969
+Note This data does not encompass vaccine doses administered by the Australian Government. All national data can be found on the Australian Government's Department of Health website .
+Two doses of the vaccine are required. For more information, see our COVID-19 vaccines information hub .
+Information about this report
+This is an interactive daily report of COVID-19 vaccines delivered in hospital immunisation hubs in Victoria.
+The report is updated daily. It is the most accurate data available to the Department of Health at the time of publication.
+Information about the data
+A dose administered is a dose per person. When you receive your first dose of a COVID-19 vaccine you will be told when you need to book for your second dose. COVID-19 vaccines require two doses.
+Interpreting data
+Data presented in this report is updated daily. It may change as more information becomes available. Analysis in this report is based on the date on which the event was first received by the department.
+Source of data
+The department sources this data through health services.
+Related data pages

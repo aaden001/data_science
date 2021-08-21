@@ -1,0 +1,3 @@
+View the COVID-19 Case, Laboratory, and Hospital Data Dashboard
+State-level case, laboratory, and hospital data updated by 5:00 p.m. MT Monday through Saturday, excluding holidays, and are current as of 3/3/2021. Vaccine “Data at a Glance” updated by 5:00 p.m. MT Monday through Saturday, excluding holidays, and are current as of 3/3/2021. Case data are based on surveillance system records provided by the public health districts. Vaccine administration data are based on data contained in the Immunization Reminder Information System (IRIS). Public health district data will be updated on their agency website at their discretion and might differ from data presented here. Data are preliminary and subject to change.
+beenhere

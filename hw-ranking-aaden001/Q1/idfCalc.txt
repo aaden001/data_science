@@ -1,0 +1,5 @@
+term = "coronavirus"
+IDF(coronavirus) = log2(55 billion/ 2.03 billion)
+ 		= log2(27.09)
+		= 4.759
+		= 4.76

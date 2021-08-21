@@ -1,0 +1,17 @@
+Tips for scoring a Massachusetts coronavirus vaccine appointment
+50,000 new slots go live Thursday
+Share this:
+February 24, 2021 at 6:26 p.m.
+| UPDATED:
+March 1, 2021 at 10:11 p.m.
+The mad dash to score a vaccine appointment is testing the state’s webmasters.
+New appointments go live every Thursday via the state’s vaxfinder site that has flopped for people 65-plus and those with two specific comorbidities.
+Those new appointments will be at the state’s mass vax sites in Foxboro, Boston, Springfield, Natick, Danvers and Dartmouth.
+The digital waiting room will queue users online during high-traffic periods, where they’ll wait for entry to the page where they can actually book an appointment — but won’t be bounced out during the process. State officials promise this go-around will be better than last week.
+Here are some tips that could help those in the eligible vax population score an appointment:
+The state website that shows the different mass vax sites is vaxfinder.mass.gov . But when that site crashed last week, many residents scored open appointments by going directly to a third-party provider website, such as Curative, which runs the mass vax sites in Danvers , Springfield and Dartmouth . People can simultaneously refresh both the state website and the third-party site to see if new appointments become available.
+A Somerville software engineer has created a Twitter account that immediately alerts people when new slots go live. The bot account, @vaccinetime, tweets out the specific vax site and the number of new available slots when they are uploaded to the vax website. The account includes the direct link to sign up for an appointment. One key tip is to enable Twitter notifications, so users are immediately alerted about the new slots.
+An Arlington software developer built an online vaccination platform , where people can clearly see which vax providers have open slots. The site has the direct links to sign up. That website is macovidvaccines.com .
+Have all your vital information ready, including your name, age, address and insurance information. The coronavirus vaccine is technically free, but Gov. Charlie Baker said the state is still looking for health insurance companies to help pay.
+Try CVS, the chain is now offering up slots via its site for all participating states, where you can drill down to Massachusetts and Rhode Island.
+Sign up for email newsletters

@@ -1,0 +1,12 @@
+Forecast Assumptions
+Interpretation of Forecasts of New and Total Deaths
+This week, ensemble forecasts of COVID-19 deaths over the next 4 weeks included forecasts from 39 modeling groups, each of which contributed a forecast for new or total deaths for at least one jurisdiction.
+This week’s national ensemble predicts that the number of newly reported COVID-19 deaths will likely decrease over the next 4 weeks, with 4,400 to 12,900 new deaths likely reported in the week ending March 27, 2021. The national ensemble predicts that a total of 540,000 to 564,000 COVID-19 deaths will be reported by this date.
+The state- and territory-level ensemble forecasts predict that over the next 4 weeks, the number of newly reported deaths per week will likely decrease in 19 jurisdictions, which are indicated in the forecast plots below. Trends in numbers of future reported deaths are uncertain or predicted to remain stable in the other states and territories.
+National Forecast
+Download full-sized imageimage icon
+The figures show the number of new (top row) and total (bottom row) COVID-19 deaths reported in the United States each week from December 26 through February 27 and forecasted over the next 4 weeks, through March 27.
+Models make various assumptions about the levels of social distancing and other interventions, which may not reflect recent changes in behavior. See model descriptions below for details on the assumptions and methods used to produce the forecasts.
+Download national forecast data excel icon[XLS – 34 KB]
+State Forecasts
+State-level forecasts show the predicted number of new COVID-19 deaths for the next 4 weeks by state. Each state forecast figure uses a different scale due to differences in the number of COVID-19 deaths between states and only forecasts meeting a set of ensemble inclusion criteria are shown. Further details are available here: https://covid19forecasthub.org/doc/ensemble/external icon . Plots of the state-level ensemble forecast and the underlying data can be downloaded below.

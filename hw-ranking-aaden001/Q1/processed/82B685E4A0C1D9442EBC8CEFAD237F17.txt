@@ -1,0 +1,21 @@
+SARS-CoV-2 Viral Culturing at CDC
+SARS-CoV-2 Viral Culturing at CDC
+Updated Dec. 29, 2020
+Minus
+Related Pages
+SARS-CoV-2, the virus that causes COVID-19, was isolated in the laboratory and is available for research by the scientific and medical community.
+One important way that CDC has supported global efforts to study and learn about SARS-CoV-2 in the laboratory was by growing the virus in cell culture and ensuring that it was widely available. Researchers in the scientific and medical community can use virus obtained from this work in their studies.
+CDC is using SARS-CoV-2 in various ways, including the following:
+To test serum collected from people who have recovered from COVID-19 to look for antibody that might block viral infections
+To determine when people shed live virus during the disease.external icon This information has shaped CDC’s guidance on when to discontinue transmission-based precautions for patients .
+SARS-CoV-2 strains supplied by CDC and other researchers can be requested, free, from the Biodefense and Emerging Infections Research (BEI) Resources Repositoryexternal icon by established institutions that meet BEI requirements. These requirements include maintaining appropriate facilities and safety programs, as well as having the appropriate expertise. BEI supplies organisms and reagents to the broader community of microbiology and infectious disease researchers.
+Some areas of COVID-19 research that public and academic institutions may study with the SARS-CoV-2 strains include:
+Antiviral research:external icon This includes research aimed at testing the ability of existing or experimental antiviral medications to treat or prevent infection with SARS-CoV-2.
+Vaccine development:external icon Scientists in public, private sector, and academic institutions continue to work together to develop safe and effective COVID-19 vaccines. Learn more about currently authorized vaccines in the United States.
+Pathogenesis research: This includes research to determine the various ways the virus can be transmitted to a host, the severity of illness it causes in a host, how much virus is produced in the body, and what organs the virus can spread to within the body.
+Virus stability research:external icon This is research that indicates how long the virus can survive under certain conditions, such as how long the virus can survive and remain infectious on surfaces, and the temperatures at which it can survive.
+Timeline:
+On January 20, 2020, CDC received a clinical specimen collected from the first reported U.S. patient infected with SARS-CoV-2. CDC immediately placed the specimen into cell culture to grow a sufficient amount of virus for study.
+On February 2, 2020, CDC generated enough SARS-CoV-2 grown in cell culture to distribute to medical and scientific researchers.
+On February 4, 2020, CDC shipped SARS-CoV-2 to the BEI Resources Repository.
+An article discussing the isolation and characterization of this virus specimen is available in Emerging Infectious Diseases.
